@@ -53,7 +53,7 @@ allprojects {
     }
 
     tasks.bootJar {
-        enabled = true
+        enabled = false
     }
 
     dependencies {
@@ -81,11 +81,6 @@ subprojects {
 }
 
 dependencies {
-    /*
-    runtimeOnly("com.h2database:h2")
-
-    */
-
     implementation(project(":api"))
     implementation(project(":business"))
     implementation(project(":core"))
@@ -100,4 +95,8 @@ tasks.withType<Test> {
 
 tasks.jar {
     enabled = false
+}
+
+tasks.bootJar {
+    enabled = true
 }
