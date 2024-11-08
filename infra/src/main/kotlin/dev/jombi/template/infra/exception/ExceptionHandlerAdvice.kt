@@ -2,7 +2,7 @@ package dev.jombi.template.infra.exception
 
 import dev.jombi.template.common.exception.CustomException
 import dev.jombi.template.common.exception.GlobalExceptionDetail
-import dev.jombi.template.common.exception.response.ResponseError
+import dev.jombi.template.common.response.ResponseError
 import dev.jombi.template.core.auth.exception.AuthExceptionDetails
 import org.slf4j.LoggerFactory
 import org.springframework.http.ResponseEntity

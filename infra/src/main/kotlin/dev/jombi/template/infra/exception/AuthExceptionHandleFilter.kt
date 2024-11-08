@@ -4,7 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper
 import dev.jombi.template.common.exception.CustomException
 import dev.jombi.template.common.exception.ExceptionDetail
 import dev.jombi.template.common.exception.GlobalExceptionDetail
-import dev.jombi.template.common.exception.response.ResponseError
+import dev.jombi.template.common.response.ResponseError
 import jakarta.servlet.FilterChain
 import jakarta.servlet.http.HttpServletRequest
 import jakarta.servlet.http.HttpServletResponse

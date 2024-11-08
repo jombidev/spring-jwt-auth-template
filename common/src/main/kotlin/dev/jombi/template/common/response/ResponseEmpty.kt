@@ -4,7 +4,7 @@ import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 
 @Suppress("unused")
-open class ResponseEmpty(open val code: String, open val status: Int) {
+data class ResponseEmpty(override val code: String, override val status: Int) : BaseResponse {
     companion object {
         fun of(message: String, code: HttpStatus) =
             ResponseEntity.status(code).body(ResponseEmpty(message, code.value()))
